@@ -1,0 +1,772 @@
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap);
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+#navegacion-movil {
+  display: none;
+  z-index: 10;
+}
+#nav {
+  background: #000;
+  height: 80px;
+  width: 100%;
+}
+.enlace {
+  position: absolute;
+  z-index: 10;
+  padding: 10px 20px;
+}
+.logo {
+  height: 40px;
+}
+#nav ul {
+  float: right;
+  margin-right: 20px;
+}
+#nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+#nav ul li a {
+  color: #fff;
+  font-size: 18px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  transition: all 0.2s;
+}
+#nav ul li a.active,
+#nav ul li a:hover {
+  background: #fff;
+  transition: 0.5s;
+  color: #000;
+}
+.checkbtn {
+  font-size: 30px;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+#check {
+  display: none;
+}
+.fondomarvel {
+  background: url(../img/fondo2.jpg);
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-position: center;
+  background-size: cover;
+}
+.fondomarvel-color {
+  width: 100%;
+  height: calc(100vh - 80px);
+  background: rgba(0, 0, 0, 0.705);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.encabezado {
+  width: 80%;
+  height: 70%;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  text-align: center;
+}
+.descripcion {
+  margin: 2px 20px;
+  background: rgba(255, 255, 255, 0.048);
+  backdrop-filter: blur(10px);
+  text-shadow: 1px 1px 5px #000;
+  border-radius: 20px;
+  color: #fff;
+}
+.item img {
+  width: 500px;
+  animation-name: marvel;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes marvel {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.parrafo {
+  font-family: "Raleway", sans-serif;
+  text-align: justify;
+  margin: 20px;
+  color: #fff;
+  font-size: 30px;
+}
+.titulo {
+  font-family: "Raleway", sans-serif;
+  font-size: 40px;
+  color: rgb(252, 1, 1);
+  text-shadow: 1px 1px 1px rgb(255, 253, 253);
+  text-align: center;
+}
+.estrenos {
+  width: 100%;
+  height: 30vh;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.estrenos-titulo {
+  font-family: "Anton", sans-serif;
+  color: #fff;
+  font-size: 120px;
+  text-align: center;
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+}
+.container-movie {
+  background: url(../img/DoctorStrange2-2.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container-movie-color {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.texto {
+  text-align: center;
+  font-family: "Courgette", cursive;
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  text-shadow: 1px 1px 10px rgb(12, 12, 12);
+  width: 60%;
+}
+.texto-estreno {
+  background: red;
+  font-family: "Raleway", sans-serif;
+  text-align: start;
+  font-size: 35px;
+}
+a {
+  color: wheat;
+  font-family: "Raleway", sans-serif;
+  font-size: 35px;
+  transition: all 0.5s;
+}
+a:hover {
+  color: #fff;
+}
+i {
+  padding-right: 10px;
+}
+.container-movie-thor {
+  background: url(../img/thor.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.container-movie-msmarvel {
+  background: url(../img/marvels.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+.fade-up,
+.fade-left {
+  opacity: 0.5;
+  transition: all 2s;
+}
+.transform-up {
+  transform: translateY(60%);
+}
+.transform-left {
+  transform: translateX(20%);
+}
+.aparece {
+  opacity: 1;
+  transform: none;
+}
+.encabezado-pelicula,
+.encabezado-pelicula-fondo {
+  width: 100%;
+  height: 50vh;
+}
+.encabezado-pelicula {
+  background: url(../img/eternos.jpg);
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  transition: all 1s ease-in-out;
+}
+.encabezado-pelicula-fondo {
+  background: rgba(0, 0, 0, 0.336);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.encabezado-pelicula-texto {
+  font-size: 100px;
+  font-family: "Anton", sans-serif;
+  color: whitesmoke;
+  text-shadow: 0 0 100px rgb(250, 4, 4);
+}
+.pelicula-1 {
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  height: 50vh;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pelicula-1-descripcion {
+  width: 50%;
+  text-align: center;
+  margin: auto;
+}
+.pelicula-1-imagen {
+  width: auto;
+  margin: auto;
+}
+.pelicula-1-imagen img {
+  width: 500px;
+  height: 310px;
+  border-radius: 10px;
+  opacity: 0.9;
+  transition: all 0.5s;
+}
+.pelicula-1-imagen img:hover {
+  opacity: 1.9;
+  transform: scale(0.9);
+}
+.pelicula-titulo {
+  font-family: "Anton", sans-serif;
+  font-size: 35px;
+  color: red;
+  padding-bottom: 10px;
+}
+.pelicula-texto {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 20px;
+  text-align: justify;
+}
+.pelicula-texto-no-disponible {
+  font-family: "Titillium Web", sans-serif;
+  font-size: 25px;
+  text-decoration: underline;
+  text-align: justify;
+  color: red;
+}
+.pelicula-boton {
+  cursor: pointer;
+  margin-top: 10px;
+  float: left;
+  font-size: 20px;
+  border: none;
+  color: #fff;
+  padding: 5px;
+  background: rgb(255, 0, 0);
+}
+.pelicula-enlace {
+  color: rgb(255, 255, 255);
+  font-family: "Raleway", sans-serif;
+  font-size: 20px;
+  transition: all 0.5s;
+}
+.pelicula-enlace:hover {
+  color: rgb(3, 3, 3);
+}
+.container {
+  padding: 100px;
+  background-color: whitesmoke;
+}
+#marvel-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.hero-container {
+  text-align: center;
+  border: 2px solid #000;
+  margin: 20px auto;
+  width: 500px;
+  height: 300px;
+  background: rgb(0, 0, 0);
+  transition: all 0.5s;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-container img {
+  width: 100%;
+  height: 200px;
+  transition: all 0.5s;
+}
+.hero-container:hover {
+  background: rgb(255, 0, 0);
+}
+.hero-container img:hover {
+  border-radius: 0;
+  transform: scale(1.2);
+}
+.title {
+  z-index: 10;
+  margin: 20px;
+  color: rgb(253, 253, 253);
+  text-shadow: 1px 1px 8px rgb(0, 0, 0);
+  font-size: 30px;
+  transition: all 0.5s;
+}
+.title:hover {
+  color: whitesmoke;
+  background: rgb(0, 0, 0);
+  text-shadow: none;
+}
+a {
+  font-size: 50px;
+  color: rgb(248, 248, 255);
+  text-decoration: none;
+  text-align: center;
+}
+.ir-arriba {
+  padding-left: 10px;
+  border-radius: 100%;
+  display: none;
+  margin: 0;
+  padding: 15px;
+  background: #d3180a;
+  font-size: 20px;
+  color: #fff;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  transition: all 0.2s;
+  z-index: 10;
+}
+i {
+  padding-left: 8px;
+}
+.ir-arriba:hover {
+  border-radius: 100%;
+  display: none;
+  padding: 20px;
+  background: #000;
+  font-size: 20px;
+  color: rgb(255, 251, 251);
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+@media only screen and (max-width: 500px) {
+  .hero-container {
+    text-align: center;
+    border: 2px solid #000;
+    margin: 20px auto;
+    width: 200px;
+    height: 300px;
+    background: rgba(255, 254, 254, 0.363);
+    backdrop-filter: blur(2px);
+    transition: all 0.5s;
+    border-radius: 0;
+  }
+  .hero-container img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s;
+    border-radius: 0;
+  }
+  .title {
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+    font-size: 20px;
+    transition: all 0.5s;
+  }
+  .title:hover {
+    color: whitesmoke;
+    background: red;
+    text-shadow: none;
+  }
+}
+@media only screen and (max-width: 350px) {
+  .hero-container {
+    text-align: center;
+    border: 2px solid #000;
+    margin: 20px auto;
+    width: 300px;
+    height: 300px;
+    background: rgba(255, 254, 254, 0.363);
+    backdrop-filter: blur(2px);
+    transition: all 0.5s;
+    border-radius: 0;
+  }
+  .hero-container img {
+    width: 100%;
+    height: 200px;
+    transition: all 0.5s;
+    border-radius: 0;
+  }
+  .title {
+    color: rgb(253, 253, 253);
+    text-shadow: 1px 1px 8px rgb(0, 0, 0);
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+  .title:hover {
+    color: whitesmoke;
+    background: red;
+    text-shadow: none;
+  }
+  .navbar {
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    background: rgba(255, 0, 0, 0.993);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  a {
+    font-size: 35px;
+    color: rgb(248, 248, 255);
+    text-decoration: none;
+    text-align: center;
+  }
+}
+.fondo-serie {
+  background: url(../img/MN.jpg);
+  width: 100%;
+  height: 50vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+@media (max-width: 1200px) {
+  .enlace {
+    padding-left: 20px;
+  }
+  #nav ul li a {
+    font-size: 16px;
+  }
+  .parrafo {
+    margin: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .titulo {
+    font-size: 30px;
+    color: rgb(252, 1, 1);
+    text-shadow: 1px 1px 1px rgb(255, 253, 253);
+    text-align: center;
+  }
+  .item img {
+    border-radius: none;
+    width: 400px;
+  }
+  .estrenos-titulo {
+    font-size: 90px;
+  }
+  .encabezado-pelicula-texto {
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 0 100px rgb(250, 4, 4);
+  }
+  .pelicula-1-imagen img {
+    width: 300px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  .pelicula-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 25px;
+    color: red;
+    padding-bottom: 10px;
+  }
+  .pelicula-texto {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    text-align: justify;
+  }
+  .pelicula-texto-no-disponible {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: justify;
+    color: red;
+  }
+  .pelicula-enlace {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+  .pelicula-boton {
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    background: rgb(255, 0, 0);
+  }
+}
+@media (max-width: 900px) {
+  .encabezado {
+    width: 80%;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .parrafo {
+    margin: 10px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 25px;
+  }
+  .titulo {
+    font-size: 35px;
+    color: rgb(252, 1, 1);
+    text-shadow: 1px 1px 1px rgb(255, 253, 253);
+    text-align: center;
+  }
+  .item img {
+    border-radius: 0;
+    width: 350px;
+  }
+  .estrenos-titulo {
+    font-size: 90px;
+  }
+  .descripcion {
+    margin: 40px;
+  }
+  .texto {
+    font-size: 25px;
+  }
+  .texto-estreno {
+    font-size: 25px;
+  }
+  .estrenos-titulo {
+    font-size: 80px;
+  }
+  .encabezado-pelicula-texto {
+    font-size: 50px;
+    font-family: "Anton", sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 0 100px rgb(250, 4, 4);
+  }
+  .pelicula-1-imagen img {
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  .pelicula-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    color: red;
+    padding-bottom: 5px;
+  }
+  .pelicula-texto {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .pelicula-texto-no-disponible {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: justify;
+    color: red;
+  }
+  .pelicula-enlace {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+  .pelicula-boton {
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    background: rgb(255, 0, 0);
+  }
+}
+@media (max-width: 700px) {
+  #nav {
+    display: none;
+  }
+  #navegacion-movil {
+    transition: all 1s;
+    background: #000;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    width: 100%;
+    height: auto;
+  }
+  #navegacion-movil ul li {
+    display: inline-block;
+    margin: 5px 5px;
+    margin-right: 10px;
+  }
+  #check:checked ~ ul {
+    left: 0;
+  }
+  .fondomarvel,
+  .fondomarvel-color {
+    height: 100vh;
+  }
+  .encabezado {
+    width: 80%;
+    height: auto;
+    display: block;
+    align-items: center;
+    text-align: center;
+  }
+  .parrafo {
+    margin: 10px;
+    padding-bottom: 20px;
+    color: #fff;
+    font-size: 20px;
+  }
+  .titulo {
+    font-size: 30px;
+    color: rgb(252, 1, 1);
+    text-shadow: 1px 1px 1px rgb(255, 253, 253);
+    text-align: center;
+  }
+  .item img {
+    border-radius: 0;
+    width: 300px;
+  }
+  .estrenos-titulo {
+    font-size: 90px;
+  }
+  .descripcion {
+    margin: 20px;
+  }
+  .texto {
+    font-size: 20px;
+  }
+  .texto-estreno {
+    font-size: 20px;
+  }
+  .estrenos-titulo {
+    font-size: 50px;
+  }
+  .estrenos {
+    height: auto;
+  }
+  .pelicula-1 {
+    margin: auto;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    height: 100vh;
+    flex-wrap: wrap;
+  }
+  .pelicula-1-descripcion {
+    width: 90%;
+    text-align: center;
+    margin: auto;
+  }
+  .encabezado-pelicula-texto {
+    font-size: 30px;
+    font-family: "Anton", sans-serif;
+    color: whitesmoke;
+    text-shadow: 0 0 100px rgb(250, 4, 4);
+  }
+  .pelicula-1-imagen {
+    margin: 0;
+  }
+  .pelicula-1-imagen img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    opacity: 1;
+  }
+  .pelicula-titulo {
+    font-family: "Anton", sans-serif;
+    font-size: 20px;
+    color: red;
+    padding-bottom: 5px;
+  }
+  .pelicula-texto {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 14px;
+    text-align: justify;
+  }
+  .pelicula-texto-no-disponible {
+    font-family: "Titillium Web", sans-serif;
+    font-size: 15px;
+    text-decoration: underline;
+    text-align: justify;
+    color: red;
+  }
+  .pelicula-enlace {
+    color: rgb(255, 255, 255);
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+    transition: all 0.5s;
+  }
+  .pelicula-boton {
+    cursor: pointer;
+    margin-top: 5px;
+    float: left;
+    font-size: 15px;
+    border: none;
+    color: #fff;
+    padding: 5px;
+    background: rgb(255, 0, 0);
+  }
+}
+@media (max-width: 600px) {
+  #navegacion-movil ul li {
+    display: inline-block;
+    margin: 5px 5px;
+    margin-right: 10px;
+  }
+  #navegacion-movil ul li a i {
+    font-size: 30px;
+  }
+}
